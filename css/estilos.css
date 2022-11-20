@@ -1,0 +1,102 @@
+/*CAMBIO ESTILOS DEL HEADER + NAV*/
+/*mi color en el NAVBAR*/
+.bg-durazno {
+    background-color: #f8e4b0;
+}
+
+/*mi logo en el NAVBAR*/
+.redondo {
+    border-radius: 150px;
+}
+
+.navbar-nav {
+    --bs-navbar-color: #ff914d;
+    --bs-navbar-hover-color: #ff914d;
+    --bs-navbar-disabled-color: #ff914d;
+    --bs-navbar-active-color: #ff914d;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: #ff914d;
+    --bs-navbar-brand-hover-color: #ff914d;
+    --bs-navbar-toggler-border-color: #ff914d;
+}
+
+
+/*titulo debajo del NAVBAR */
+.horarioCopal {
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-size: 30px;
+    background-color: #ff914d;
+    border-radius: 10px;
+}
+
+.navbar {
+    font-family: "Dosis", sans-serif;
+    font-size: x-large;
+}
+
+/*MAIN*/
+.misCards {
+    padding: 20px;
+    margin: 60px;
+}
+
+.card-text {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    color: #ff914d;
+    margin-top: 20px;
+}
+
+.card-body {
+    background-color: #f8e4b0;
+    color: #ff914d;
+}
+
+/*FOOTER*/
+.colorWsp,
+.card-title{
+    font-family: "Dosis";
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
+    background-color: #ff914d;
+    border-radius: 100px;
+}
+.btn {
+    font-family: "Dosis";
+    border:none;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    background-color: #ff914d;
+    border-radius: 50px;
+}
+
+.iconWsp {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+.colorTexto {
+    font-family: "Dosis", sans-serif;
+    font-size: larger;
+    color: #ff914d;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+/*MEDIOS DE PAGO EN INDEX Y CARRITO*/
+.mediosPago {
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    color: #ff914d;
+}
+/*IFRAME DE CONTACTO*/
+.bordeMapa{
+    border-radius: 30px;
+}
