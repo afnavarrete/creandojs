@@ -1,5 +1,3 @@
-
-//---------------------------------------------------------------
 //CLASE 7 FUNCIONES DE ORDEN SUPERIOR
 //ABSTRACCIONES resumir un grupo complejo de instrucciones bajo una palabra clave(function) que sugiere cual es el problema a resolver por la misma(ver metodos nativos de JS)
 //las funciones de orden superior es aquella que bien retorna una funcion, o recibe una funcion por parametro. este tipo de funciones nos permiten abstraernos sobre aaciones y no solo valores

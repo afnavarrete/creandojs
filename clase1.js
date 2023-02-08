@@ -1,31 +1,17 @@
 //CLASE 1
-//Declaracion de Variable "let"
-/*
-let nombre = "Jeremias"; // con comillas porque es un STRING
-let edad = 30; //sin comillas porque es un NUMBER
-let alumno = true; //sin comillas porque es un BOOLEANS solo admite true or false
-//en la web, click derecho inspeccionar Console
-console.log(nombre)
-console.log(edad)
-console.log(alumno)
+//PRIMER TAREA EN CLASE:
+//usuario debe ingresar su edad 
+//edadJubilatoria=65
+//tenemos que calcular en que año se jubila y mostrarlo en alert.eL año actual es 2023 
 
-//Declaracion de Variable "const"
-const CURSO="JS";
-console.log(CURSO)
-
-//Concatenaciones van con "+"
-//declaracion let
-let nombre="Jimena"
-let apellido="Alcuaz"
-console.log(nombre+" "+apellido)
-
-
-//Prompt y Alert
-
-let nombre = prompt("Ingrese su nombre por favor")
-let apellido = prompt("Ingrese su apellido por favor")
-
-alert(nombre+" "+apellido)
-
-
-*/
+// EJERCICIO:
+//primero planteo el promt, mi constante es la edad jubilatoria y realizo la primer operacion edad jubilatoria menos la edad del usuario. 
+let edad = parseInt (prompt(`Por favor, Ingrese su Edad`))
+const edadJubilatoria = 65
+const calculo = edadJubilatoria - edad
+//planteo el año actual y realizo la operacion de mi constante "calculo" + el "anoActual". 
+const anoActual = 2023
+const anoJubilacion = calculo + anoActual
+//por ultimo mi resultadoTotal 
+const resultadoTotal = (`Usted se Jubilara en `+" "+anoJubilacion)
+alert(resultadoTotal)
