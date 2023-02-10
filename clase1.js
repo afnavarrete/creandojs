@@ -1,11 +1,11 @@
 //CLASE 1
 //PRIMER TAREA EN CLASE:
-//usuario debe ingresar su edad 
-//edadJubilatoria=65
-//tenemos que calcular en que año se jubila y mostrarlo en alert.eL año actual es 2023 
+/*usuario debe ingresar su edad 
+edadJubilatoria=65
+tenemos que calcular en que año se jubila y mostrarlo en alert.eL año actual es 2023 */
 
 // EJERCICIO:
-//primero planteo el promt, mi constante es la edad jubilatoria y realizo la primer operacion edad jubilatoria menos la edad del usuario. 
+//primero planteo el prompt, mi constante es la edad jubilatoria y realizo la primer operacion edad jubilatoria menos la edad del usuario. 
 let edad = parseInt (prompt(`Por favor, Ingrese su Edad`))
 const edadJubilatoria = 65
 const calculo = edadJubilatoria - edad
