@@ -1,95 +1,90 @@
 //PRIMER ENTREGA DE MI PROYECTO FINAL
-//primero planteo la funcion que seria sumar la cantidad de viandas en total que quiere el usuario
-/*
+// voy a solicitar por prompt que el usuario ingrese la cantidad de viandas que quiere comprar, una vez solicitado se le va a preguntar en que metodo de pago va a abonar-
+
+//planteo la funcion de suma de viandas y los parametros son los tres dias que van a encargar
 function sumar(parametro1, parametro2, parametro3) {
-//CORRECIONES DE LA PRIMER ENTREGA
-    let resultado = parametro1 + parametro2 + parametro3
-    return resultado //en el return solo poner "resultado" ya que los parametros estan descriptos en el "let"
+    let sumaTotal = parametro1 + parametro2 + parametro3
+    return sumaTotal
 }
-//aca, le pido al usuario que escriba cuantas viandas quiere cada dia
+//planteo la constante del precio x vianda
+const precioVianda = 600
+//aca, le pido al usuario que escriba cuantas viandas quiere cada dia y realizo la suma
+function datosDelUsuario() {
+    let parametro1 = Number(prompt("Ingrese el n° de viandas que desea para el día LUNES"))
+    let parametro2 = Number(prompt("Ingrese el n° de viandas que desea para el día MIÉRCOLES"))
+    let parametro3 = Number(prompt("Ingrese el n° de viandas que desea para el día VIERNES"))
+    alert("El TOTAL de viandas encargadas es de" + " " + sumar(parametro1, parametro2, parametro3))
+    //aca realizo la multiplicacion    
+    alert("El total a abonar es de $" + " " + precioVianda * sumar(parametro1, parametro2, parametro3))
+}
+//llamo a la funcion
+datosDelUsuario()
+metodoDePago()
 
-let parametro1 = Number(prompt("Ingrese el n° de viandas que desea para el día LUNES"))
-console.log("LUNES" + "   " + parametro1)
-let parametro2 = Number(prompt("Ingrese el n° de viandas que desea para el día MIÉRCOLES"))
-console.log("MIÉRCOLES" + "   " + parametro2)
-let parametro3 = Number(prompt("Ingrese el n° de viandas que desea para el día VIERNES"))
-console.log("VIERNES" + "  " + parametro3)
-let resultado = parametro1 + parametro2 + parametro3
-//aca agrego un alert para que el usuario sepa cuantas unidad de viandas encargo. y realizo un console para poder verlo "del otro lado"
-alert("El TOTAL de viandas encargadas es de" + " " + resultado)
-
-let metodoPago = Number(prompt(`Cómo desea Abonar =
-    1: efectivo
-    2: transferencia
-    `));
-
-if (metodoPago == "1" ) {
-    alert( sumar(parametro1,) * -0.5);
-    console.log ("del total -5%")
-} else {
-    if (metodoPago== "2") {
-        alert("Tenes un 7% de DESCUENTO");
-        console.log ("del total -7%")
+//ciclo para metodo de pago
+function metodoDePago() {
+    let costoFinal= 0;
+    do{
+        let opcionesPago = parseInt (prompt(`Seleccione una opcion de pago 
+        1:Efectivo\n
+        2:Transferencia\n
+        3:Debito\n
+        4:Credito\n`));
+    if (opcionesPago ===1){
+        alert (`Abonará en efectivo`)
+    }else if (opcionesPago ===2){
+        alert(`Nuestro alias es: .... RECORDA ENVIAR TU COMPROBANTE POR WHATSAPP`)
+    }else if (opcionesPago ===3){
+        alert(`Acercate a nuestro local`)
+    }else if (opcionesPago ===4){
+        alert (`Acercate a nuestro local`)
+    }else{
+        alert(`ha ingresado una opcion incorrecta`)
     }
-    else {
-        alert ("Escribinos al Whatsapp")
-        console.log("abona con otro medio de pago")
+    
+    let seleccionAyuda= parseInt( prompt(`Necesita ayuda? 1:Si , 2: No`))
+    } 
+    while(seleccionAyuda ===1){
+        
+        alert(`comunicate con nosotros al 3493...`)
     }
-}
-*/
-
-//SEGUNDA PRE-ENTREGA DEL PROYECTO FINAL
-/*
-let nombre = prompt("Ingrese su nombre por favor")
-let apellido = prompt("Ingrese su apellido por favor")
-let direccion  = prompt ("Ingrese su direccion por favor")
-alert(`bienvenido ${nombre} ${apellido} ${direccion}`)
-console.log(`bienvenido ${nombre} ${apellido} ${direccion}`)
-let elegir = prompt ("Qué menú desea comer?");
-let opcionUno= prompt (menuLunes)
-
-if (opcionUno == "si" ) {
-    alert("Su pedido ha sido agregado al carrito");
-} else {
-    alert("Elija la opcion 1");
-}
-let opcionDos= prompt (menuMartes);
-let opcionTres= prompt(menuMiercoles)*/
+    
+} 
 
 
 
 
 
-//objeto
-/*
-const menuCopal =[ {
-    nombre: "Menu Lunes",
-    precio: 460,
-    disponible: true,
-    detalle: "Milanesa de berenjena a la pizza con risotto de yamani y ensalada mixta",
-},
-{
-    nombre: "Menu Martes",
-    precio: 460,
-    disponible: true,
-    detalle: "Pastel de papa y calabaza con base de lentejas y espinaca con ensalada de rucula y tomate",
-},
-{
-    nombre: "Menu  Miercoles",
-    precio: 460,
-    disponible: false,
-    detalle: "Zapallitos rellenos de quinoa y calabaza con ensalada de trigo y mix de hojas verdes",
-},
-{
-    nombre:"Menu Jueves",
-    precio: 460,
-    disponible: true,
-    detalle: "Pasta corta integral con verduras y salsa, mas pancito y ensalada verde"
-},
-{
-    nombre:"menuViernes",
-    precio: 460,
-    disponible: true,
-    detalle:"Pizzeta integral con acelga y queso, empanada de carne vegetal y ensalada criolla"
-}]
-menuCopal.find (menuViernes)*/
+
+/*let metodoDePago = Number(prompt
+(`como desea abonar?
+1: efectivo
+2: tarjeta
+3: transferencia
+4: `))
+if( metodoDePago === 1){
+    alert(`Usted selecciono el metodo en EFECTIVO`)
+    
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
