@@ -1,8 +1,10 @@
-
-/*
-CLASE 6
+//ARRAYS:
 //ARRAYS:es un tipo de dato almacena valores en forma de lista.
 //INDICES: es la posicion que un determinado elemento/valor tiene dentro de mi array
+//usar lo del array para que las personas comiencen a agregar menu al array
+
+/*
+
 
 let frutas = ["Coder", 25, true];
 
@@ -26,33 +28,36 @@ for (let i = 0; <= 3; i ++){
 }*/
 
 /*METODOS
+--LENGH cuenta 
 let frutas= ["sandia", "tomate" ,"limon" ,"anana"];
-console.log(frutas.length);*/
+console.log(frutas.length);
+me devuelve 4*/
 
 /* PUSH agregue al final
 let frutas= ["sandia", "tomate" ,"limon" ,"anana"];
 frutas.push("medialuna");
 console.log (frutas);*/
 
-/*unshift poner en primer (cero) lugar
+/*UNSHIFT poner en primer (cero) lugar
 let frutas= ["sandia", "tomate" ,"limon" ,"anana"];
 frutas.unshift("pizza");
 console.log(frutas);*/
 
-/*si quiero eliminar el ultimo de mi array
+/* POP = ELIMINAR si quiero eliminar el ultimo de mi array
 let frutas= ["sandia", "tomate" ,"limon" ,"anana"];
 frutas.pop();
 console.log(frutas);*/
 
-/*si quiero eliminar el primer elemento shift
+/* SHIFT si quiero eliminar el primer elemento shift
 let frutas= ["sandia", "tomate" ,"limon" ,"anana"];
 frutas.shift();
 console.log(frutas);*/
 
-/*recibe parametros e indices, volver a ver
+/*
 let frutas= ["sandia", "tomate" ,"limon" ,"anana"];
 frutas.splice(1,2);
-console.log (frutas);*/
+console.log (frutas);
+me devuelve sandia y anana*/
 
 /*separar con elemento cada fruta
 let frutas= ["sandia", "tomate" ,"limon" ,"anana"];

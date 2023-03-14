@@ -23,4 +23,23 @@ let total= carrito.reduce((accum, p)=>{
 console.log(total);
 
 
+
+FOR EACH: te devuelve x consola todos los numeros, itera en el array
+const numeros = [1,2,3,4,5,6]
+numeros.forEach((num)=>{
+    console.log(num)
+})
+FIND: busqueda de elemento mediante funcion comparativa.
+const cursos=[
+    {nombre:`JavaScript`, precio:15000},
+    {nombre: `ReactJS`, precio:22000},
+]
+
+const resultado= cursos.find((el)=> el.nombre ==="ReactJS")
+const resultado2=cursos.find((el)=> el.nombre==="DW")
+
+console.log (resultado)
+console.log(resultado2)
+
+
 */
