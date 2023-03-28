@@ -1,5 +1,5 @@
 //PRIMER ENTREGA DE MI PROYECTO FINAL
-function bienvenida() {
+/*function bienvenida() {
     alert("Bienvenidos a Copal")
 }
 
@@ -103,7 +103,7 @@ for (const propiedad in Producto5){
     console.log(Producto5[propiedad])
 }
 
-
+*/
 
 
 
