@@ -1,4 +1,10 @@
 //PRIMER ENTREGA DE MI PROYECTO FINAL
+function bienvenida() {
+    alert("Bienvenidos a Copal")
+}
+
+bienvenida()
+
 function sumar(parametro1, parametro2, parametro3) {
     let sumaTotal = parametro1 + parametro2 + parametro3
     return sumaTotal
@@ -14,42 +20,43 @@ function cantidadViandas() {
 cantidadViandas()
 
 function metodoDePago() {
-        let opcionesPago = parseInt(prompt(`Seleccione una opcion de pago 
-        1:Efectivo\n
-        2:Transferencia\n
-        3:Debito\n
-        4:Credito\n`));
-        if (opcionesPago === 1) {
-            alert(`Abonará en efectivo`)
-        } else if (opcionesPago === 2) {
-            alert("Nuestro alias es: .... RECORDA ENVIAR TU COMPROBANTE POR WHATSAPP")
-            
-        } else if (opcionesPago === 3) {
-            alert(`Acercate a nuestro local`)
-            
-        } else if (opcionesPago === 4) {
-            alert(`Acercate a nuestro local`)
-            
-        } else {
-            alert(`ha ingresado una opcion incorrecta`)
+    let opcionesPago = parseInt(prompt(`Seleccione una opcion de pago 
+        1:Efectivo
+        2:Transferencia
+        3:Debito
+        4:Credito`));
+    if (opcionesPago === 1) {
+        alert(`Abonará en efectivo`)
+    } else if (opcionesPago === 2) {
+        alert("Nuestro alias es: .... RECORDA ENVIAR TU COMPROBANTE POR WHATSAPP")
 
-        }
+    } else if (opcionesPago === 3) {
+        alert(`Acercate a nuestro local`)
+
+    } else if (opcionesPago === 4) {
+        alert(`Acercate a nuestro local`)
+
+    } else {
+        alert(`ha ingresado una opcion incorrecta`)
+
+    }
 }
 metodoDePago()
 
 //SEGUNDA PREENTREGA FINAL
 //objeto con metodo personalizado
-function ProductoCopal (nombre, precio) {
-        this.nombre  = nombre.toUpperCase();
-        this.precio  = parseFloat(precio);
-        this.vendido = false;
-        this.sumaEnvio= function (){
-            console.log( this.precio = this.precio + 150);
+
+function ProductoCopal(nombre, precio) {
+    this.nombre = nombre.toUpperCase();
+    this.precio = parseFloat(precio);
+    this.vendido = false;
+    this.sumaEnvio = function () {
+        console.log(this.precio = this.precio += 150);
 
     }
-        this.vender = function(){
-            console.log (this.vendido)
-        }
+    this.vender = function () {
+        console.log(this.vendido)
+    }
 }
 
 //array con producto
@@ -57,14 +64,16 @@ const ProductosCopaleros=[]
 const Producto1=new ProductoCopal ("budines", 600);
 const Producto2=new ProductoCopal ("galletones", 400);
 const Producto3=new ProductoCopal ("pan lactal integral", 500);
-const Producto4=new ProductoCopal ("milanesas de soja simple" , 600);
+const Producto4=new ProductoCopal ("milanesas de soja simple", 600);
 const Producto5=new ProductoCopal ("hamburguesa de lenteja" , 250);
 const Producto6=new ProductoCopal ("hamburguesa de mijo", 250);
 
 //for each
-const Productos=[Producto1,Producto2,Producto3,Producto4]
+const Productos=[Producto1,Producto2,Producto3,Producto4,Producto5, Producto6]
 Productos.forEach ((alimentos) => {
-    console.log(alimentos)
+    console.log(Productos)
+    console.log(alimentos.nombre)
+
 })
 
 //find y filter
@@ -72,7 +81,7 @@ const busquedaDeProductos=[
     {nombre:"budines", precio:600},
     {nombre:"galletones",precio:400},
     {nombre:"pan lactal integral", precio:500},
-    {nombre:"milanesas de soja simple",orecio: 600},
+    {nombre:"milanesas de soja simple",precio: 600},
     {nombre:"hamburguesa de mijo", precio:250},
     {nombre:"hamburguesa de lenteja", precio:250}
 
@@ -93,7 +102,6 @@ Producto1.vender();
 for (const propiedad in Producto5){
     console.log(Producto5[propiedad])
 }
-
 
 
 
