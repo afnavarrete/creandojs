@@ -10,7 +10,7 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!--LINK DE ESTILOS.CSS-->
     <link rel="stylesheet" href="../css/estilos.css" />
-    
+
     <!--FAVICON con punto y solo la imagen-->
     <link rel="shortcut icon" href="../multimedia/favicon-32x32.png" type="image/x-icon" />
     <!--FUENTES-->
@@ -51,6 +51,7 @@
         </h1>
     </header>
     <main>
+        <div id="resultado" class="lh-lg suCompra"></div>
         <p class="lh-lg mediosPago fst-italic fs-3">Podés Abonar tus Viandas en Efectivo; por Transferencia Bancaria</p>
         <p class="lh-lg mediosPago fst-italic fs-3">o Mediante Mercado Pago con Débito o Crédito</p>
     </main>
@@ -75,11 +76,24 @@
         </div>
     </footer>
     <!--MI JS LINKEADO-->
-    <script src="../miarchivo.js"></script>
+    <script src="../tercerpreentrega.js"></script>
     <!-- BOOTSTRAP JAVASCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+
+        
+<!--LOCALSTORAGE Y MODIFICACION DEL DOM-->
+    <script lang="JAVASCRIPT">
+        for (let i = 0; i < localStorage.length; i++) {
+            let clave = localStorage.key(i);
+            console.log("Clave: " + clave);
+            console.log("Valor: " + JSON.parse(localStorage.getItem(clave)));
+            let vresultado = document.getElementById('resultado');
+            vresultado.innerHTML += JSON.parse(localStorage.getItem(clave)).nombre + " - "
+                + JSON.parse(localStorage.getItem(clave)).precio + '<br>';
+        }
+    </script>
 
 </body>
 

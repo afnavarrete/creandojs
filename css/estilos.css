@@ -95,3 +95,12 @@
     text-align: center;
     color: #ff914d;
 }
+.suCompra{
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color:rgb(185, 237, 179);
+    background-color: #208b15;
+    margin: 80px;
+    padding: 30px;
+}
